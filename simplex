@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -eu
+
+trap 'pkill gsettings' INT EXIT
+
+/app/bin/simplex-desktop
