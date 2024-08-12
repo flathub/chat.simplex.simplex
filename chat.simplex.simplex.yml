@@ -24,13 +24,18 @@ modules:
       - mkdir -p ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps
       - mv squashfs-root/simplex.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
       - mv squashfs-root/usr/bin squashfs-root/usr/lib ${FLATPAK_DEST}/
+      - mv ${FLATPAK_DEST}/bin/simplex ${FLATPAK_DEST}/bin/simplex-desktop
+      - mv ${FLATPAK_DEST}/lib/app/simplex.cfg ${FLATPAK_DEST}/lib/app/simplex-desktop.cfg
       - install -Dm644 scripts/flatpak/${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
       - install -Dm644 scripts/flatpak/${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm755 -t ${FLATPAK_DEST}/bin/ ./simplex
     sources:
       - type: file
         dest-filename: simplex.appimage
         url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.0.0/simplex-desktop-x86_64.AppImage
         sha512: 9e87d45311254a7a29187e08b1c1c0f0ab3b12dfbe2462b020a47a74034d6d67f3b1aa290c13f58eb6dac85af333c228e8e2d9fbe3bfbcf786255eb283a6a68b
+      - type: file
+        path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
         commit: 1d9c5b7a0bb851770a9c1f9b8c7658ceb7db1b30
