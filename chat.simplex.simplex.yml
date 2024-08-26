@@ -32,8 +32,8 @@ modules:
     sources:
       - type: file
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.0.1/simplex-desktop-x86_64.AppImage
-        sha512: 19f73b72701e604ac9a779f453514ecc00063ee0158d541556d16ebc9e982b444c89da86e92caf7b18d887c8ec9ac49119bba922f60e7a95617b5f236d70c411
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.0.3/simplex-desktop-x86_64.AppImage
+        sha512: 4f4ee203d413f3108a1197995c0ca5176c71682c7dd4615f306bf5b6bf1dc880f31f66bfd8a2f4e927bce64a673dc42ad8d356105fbf6f675d1c5e6d5f20c469
       - type: file
         path: simplex
       - type: git
