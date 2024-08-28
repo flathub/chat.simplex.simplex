@@ -38,7 +38,7 @@ modules:
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: 1d9c5b7a0bb851770a9c1f9b8c7658ceb7db1b30
+        commit: 121eaf60738b7b94d63b8b8548b04a4f183b0502
   - name: libnotify
     buildsystem: meson
     config-opts:
