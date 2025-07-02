@@ -32,13 +32,13 @@ modules:
     sources:
       - type: file
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.3.6/simplex-desktop-x86_64.AppImage
-        sha256: 12f0c358b82e72a4cf71ff5e0b6abd20929fa359b1440a3cd8f033933c551127
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.3.7/simplex-desktop-x86_64.AppImage
+        sha256: 3ec5124ace874d5de019b747fa13e27d9d8093a8f5bcd4801eca9a2f953595b6
       - type: file
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: ba06ce823222000a203a3cff603cfe381b943a1f
+        commit: 4f227518f185f8900cec279ba5cab0ed56a940d8
   - name: libnotify
     buildsystem: meson
     config-opts:
