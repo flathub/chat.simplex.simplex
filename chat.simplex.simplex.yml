@@ -31,14 +31,20 @@ modules:
       - install -Dm755 -t ${FLATPAK_DEST}/bin/ ./simplex
     sources:
       - type: file
+        only-arches: [ "x86_64" ]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.1/simplex-desktop-x86_64.AppImage
-        sha256: 7bf9d6c338a5c4ce4e93ef403f9de69ea823d36043457790644c7deef5e6953b
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.2/simplex-desktop-x86_64.AppImage
+        sha256: 8375aca8b10e05c99e504a8db42d22c49c036c64ef7d2522f34a4a3ef02eead3
+      - type: file
+        only-arches: [ "aarch64" ]
+        dest-filename: simplex.appimage
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.2/simplex-desktop-aarch64.AppImage
+        sha256: 3d1c2cc11fc66475b0993930d046cf2da31cb4fee0f6df3ee3afc69dd67c32c4
       - type: file
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: 671678b2aa140b3de748829441fbddf40f9f99de
+        commit: 4f016ff509a6a714b9c97d0b339c319a22f10744
   - name: libnotify
     buildsystem: meson
     config-opts:
