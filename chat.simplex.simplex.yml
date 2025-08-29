@@ -33,18 +33,18 @@ modules:
       - type: file
         only-arches: [ "x86_64" ]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.3.1/simplex-desktop-x86_64.AppImage
-        sha256: ac535ab5dee60bde96ad7ea298339d10c3644a892249e62ad2815187f1d3102f
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.4/simplex-desktop-x86_64.AppImage
+        sha256: c8bfd635dab77a04f36a5c217980eb78c8315095ea5047b8e5cf64d1e5d7ed68
       - type: file
         only-arches: [ "aarch64" ]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.3.1/simplex-desktop-aarch64.AppImage
-        sha256: 877f8d6db7603813f0417f80b7b5d9d79d18fe6f49d51c1f2a7a5c8b52818ce1
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v6.4.4/simplex-desktop-aarch64.AppImage
+        sha256: 663f5a20ab642464a6c3a724aa0c0ce74eb1855131682e2c2d9e4a35bf2272b3
       - type: file
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: 95ab629e9286fa2bf6a580b3187d973d0d4e188a
+        commit: e6e99ab7090e84689fed80ecc1956126e2e98bc6
   - name: libnotify
     buildsystem: meson
     config-opts:
