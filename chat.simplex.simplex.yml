@@ -14,7 +14,7 @@ finish-args:
   - --share=network
   - --socket=x11
   - --socket=pulseaudio
-  - --filesystem=xdg-download/simplex:create
+  - --filesystem=home
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
   - name: simplex-chat
