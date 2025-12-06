@@ -9,7 +9,6 @@ build-options:
   no-debuginfo: true
   no-debuginfo-compression: true
 finish-args:
-  - --device=dri
   - --share=ipc
   - --share=network
   - --socket=x11
