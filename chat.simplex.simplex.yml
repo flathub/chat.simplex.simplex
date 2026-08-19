@@ -33,15 +33,15 @@ modules:
       - type: file
         only-arches: [x86_64]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.0/simplex-desktop-x86_64.AppImage
-        sha256: 78d2c39390c21dddb89eb78e53b853d4acb6965d53c93be669b8b0cc546dc174
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.1/simplex-desktop-x86_64.AppImage
+        sha256: ec624b9a7afc477c7a1f845fd9a8b22627349a7e60d37b2bc38d81fc8cf8dc27
       - type: file
         only-arches: [aarch64]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.0/simplex-desktop-aarch64.AppImage
-        sha256: 6ef0c493cb9bfce39faa58fa7b9bc5fc56182567562afd622237e1e56651dffe
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.1/simplex-desktop-aarch64.AppImage
+        sha256: a7cbe931da9183118035a0ecf06d5bacd458084bdd8211cb24535f19fb8af6bb
       - type: file
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: e11128ce5b0df538c57a0d0b6911de0e88fdb652
+        commit: 95dff9120549c45ab35602f9a3078a2480692b16
