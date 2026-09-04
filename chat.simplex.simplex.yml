@@ -1,6 +1,6 @@
 app-id: chat.simplex.simplex
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: simplex
 separate-locales: false
@@ -33,15 +33,15 @@ modules:
       - type: file
         only-arches: [x86_64]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.1/simplex-desktop-x86_64.AppImage
-        sha256: ec624b9a7afc477c7a1f845fd9a8b22627349a7e60d37b2bc38d81fc8cf8dc27
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.2/simplex-desktop-x86_64.AppImage
+        sha256: 8587f97f5178bb87efc56b261c01c985287941d4cdcdf7400e9b68b65b1711c1
       - type: file
         only-arches: [aarch64]
         dest-filename: simplex.appimage
-        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.1/simplex-desktop-aarch64.AppImage
-        sha256: a7cbe931da9183118035a0ecf06d5bacd458084bdd8211cb24535f19fb8af6bb
+        url: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.2/simplex-desktop-aarch64.AppImage
+        sha256: 54d41a0ed777da914891220bc6e50a163b1f9ece522ceaa96345b86d62bb88ab
       - type: file
         path: simplex
       - type: git
         url: https://github.com/simplex-chat/simplex-chat
-        commit: 95dff9120549c45ab35602f9a3078a2480692b16
+        commit: 4df04bdb3ff94059734ad2da7d2766de6dba2cc7
