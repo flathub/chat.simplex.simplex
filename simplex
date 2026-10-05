@@ -3,4 +3,4 @@ set -eu
 
 trap 'pkill gsettings' INT EXIT
 
-/app/bin/simplex-desktop
+/app/bin/simplex-desktop "$@"
